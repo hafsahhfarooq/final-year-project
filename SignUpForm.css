@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:inherit;
+}
+.split{
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Control the left side */
+.right{
+    right: 0;
+    background-color:white;
+}
+
+/* Control the right side */
+.left{
+    left: 0;
+    background-color: aliceblue;   
+}
+
+.logo{
+    position:absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+/* Style the image inside the centered container, if needed */
+.logo img {
+    width: 250px;
+}
+
+.logo h2{
+    font-weight: bold;
+    font-size: 32px;
+    color: darkblue; /* Adjust the color as needed */
+    text-align: center;
+    
+}
+
+.signup{
+        width: 300px;
+        overflow: hidden;
+        margin:auto;
+        margin: 1 2 0 250px;
+        padding: 150px;
+        border-radius: 15px ;
+
+}
+
+label{
+    color: darkblue;
+    font-size: 17px;
+}
+
+#Uname{
+    width: 300px;
+    height: 30px;
+    border: double;
+    border-radius: 3px;
+    padding-left: 8px;
+    color: darkblue;
+}
+
+#password{
+    width: 300px;
+    height: 30px;
+    border: double;
+    border-radius: 3px;
+    padding-left: 8px;
+    color: darkblue;
+}
+
+#email{
+    width: 300px;
+    height: 30px;
+    border: double;
+    border-radius: 3px;
+    padding-left: 8px;
+    color: darkblue;
+}
+
+#age{
+    width: 100px;
+    height: 30px;
+    border: double;
+    border-radius: 3px;
+    padding-left: 8px;
+    color: darkblue;
+}
+
+#gender{
+    width: 100px;
+    height: 30px;
+    border: double;
+    border-radius: 3px;
+    padding-left: 8px;
+    color: darkblue;
+}
+
+#log{
+    width: 300px;
+    height: 30px;
+    border: double;
+    border-radius: 3px;
+    padding-left: 8px;
+    color: darkblue;
+}
+
+span{
+    color: darkblue;
+    font-size: 19px;
+}
+a{
+    float: centre;
+}
+
+.side{
+    width: 100%;
+}
+
+.welcome{
+    width:100%;
+    position: absolute;
+    top: 30%;
+    left:60%;
+    transform: translate(-50%, -50%);
+    color:cadetblue;
+    font-size: 24px;
+}
+

@@ -1,0 +1,162 @@
+/* Resetting default styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cambria";
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  /* Main container */
+  .container {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Navigation */
+  .navigation {
+    position: fixed;
+    width: 227px;
+    height: 100%;
+    top: 50px;
+    background-color: darkblue;
+    border-left: 5px solid #f5f5f5;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  
+  .navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navigation ul li {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .navigation ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+  }
+  
+  .navigation ul li:hover a {
+    background-color: white;
+    color: bisque;
+  }
+  
+  .navigation ul li a .icon {
+    font-size: 1.5em;
+    color: whitesmoke;
+    margin-right: 10px;
+  }
+  
+  .navigation ul li a .title {
+    white-space: nowrap;
+    color: whitesmoke;
+  }
+  
+  /* Main section */
+  .main {
+    position: absolute;
+    width: calc(100% - 227px);
+    left: 227px;
+    top: 100px;
+    min-height: calc(100vh - 50px);
+    background: white;
+    transition: 0.5s;
+    padding-right: 20px; /* Add padding to the right of main content */
+  }
+  
+  /* Topbar */
+  .topbar {
+    position: fixed;
+    top: 0;
+    width: calc(100% - 227px); /* Adjusted width considering navigation */
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    z-index: 999;
+    padding-left: 227px; /* Ensure topbar starts after navigation */
+  }
+  
+  .toggle {
+    font-size: 2.5em;
+    cursor: pointer;
+    color: darkblue;
+  }
+  
+  .search{
+    position: relative;
+    width: 400px;
+    margin: 0 10px;
+}
+
+.search label{
+    position: relative;
+    width: 100%;
+}
+
+.search label input{
+    width: 60%;
+    height: 20px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 30px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid darkblue;
+}
+
+.search label ion-icon{
+    position: absolute;
+    top: 0;
+    left: 5px;
+    font-size: 1.5em;
+}
+  
+  /* Card Box */
+  .cardBox {
+    margin-top: 50px;
+    width: calc(80% - 20px); /* Adjusted width considering padding */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    margin-left: auto; /* Pushes cardBox more to the right */
+}
+  
+  .card {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 30px rgba(0, 0, 0, 0.08);
+  }
+  
+  .numbers {
+    font-weight: 500;
+    font-size: 2.5em;
+    color: darkblue;
+  }
+  
+  .cardName {
+    font-size: 1.1em;
+    color: darkblue;
+    margin-top: 5px;
+  }
+  
+  .iconBox {
+    font-size: 3.5em;
+    color: darkblue;
+  }
+  
